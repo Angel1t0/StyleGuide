@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('fonts/OTF/Satoshi-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Satoshi Italic';
+    src: url('fonts/OTF/Satoshi-Italic.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Satoshi Bold';
+    src: url('fonts/OTF/Satoshi-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Satoshi Black';
+    src: url('fonts/OTF/Satoshi-Black.otf') format('truetype');
+}
+
+/*General styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #D6D5C9;
+}
+
+body {
+    font-family: 'Satoshi';
+    font-size: 18px;
+    color: #0A100D;
+    margin: 0 10rem;
+    overflow-x: hidden;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Satoshi Black';
+    font-size: 80px;
+    margin: 50px;
+}
+
+h2 {
+    font-family: 'Satoshi Bold';
+    font-size: 40px;
+    margin: 20px;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    border-left: 10px solid #902923;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+section {
+    margin: 80px 0;
+}
+
+/*Nav Styles*/
+nav {
+    display: flex;
+    align-content: center;
+    padding: 20px 50px;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #D6D5C9;
+}
+
+nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    width: 500px;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #0A100D;
+}
+
+a:hover {
+    border-bottom: 1px solid #902923;
+    transition: 0.5s;
+}
+
+a:active {
+    color: #902923;
+}
+
+/*Main Styles*/
+/*Section Introduction*/
+
+.letter-effect {
+    color: #902923;
+}
+
+.introduction p {
+    font-family: 'Satoshi Italic';
+    font-size: 20px;
+    color: #000;
+    margin: 30px;
+}
+
+/*Section Colors*/
+.color {
+    display: inline;
+    border: #000;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    border: 1px solid #000;
+}
+
+.background {
+    background-color: #D6D5C9;
+    border-bottom: none;
+}
+
+.details {
+    background-color: #902923;
+    border-bottom: none;
+    color: #fff;
+}
+
+.font {
+    background-color: #0A100D;
+    color: #fff;
+}
+
+.code {
+    float: right;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*Section Fonts*/
+.font-examples {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+    justify-content: space-around;
+}
+
+
+
+.regular {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.font-one {
+    font-family: 'Satoshi';
+}
+
+.font-two {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.font-one, .font-two {
+    padding: 20px;
+    border: 1px solid #0A100D;
+    width: 400px;
+    vertical-align: top;
+}
+
+/*Section Text-Styles*/
+
+
+.text-styles ul {
+    margin-left: 50px;
+}
+
+.heading h1 {
+    font-family: 'Satoshi Black';
+    font-weight: 900;
+    font-size: 35px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.subheading h2 {
+    font-family: 'Satoshi Bold';
+    font-weight: 700;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.sub-subheading h3 {
+    font-family: 'Satoshi Bold';
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.heading, .subheading, .sub-subheading, .paragraph {
+    margin-bottom: 20px;
+}
+
+.paragraph p {
+    font-family: 'Satoshi';
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/*Section Button*/
+
+.buttons ul {
+    margin: 20px;
+} 
+
+.primary, .secondary {
+    margin-bottom: 40px;
+}
+
+.buttons h3 {
+    margin: 30px 0;
+}
+
+.buttons li {
+    display: inline;
+    margin: 0 50px;
+    padding: 10px 20px;
+}
+
+.primary .default {
+    background-color: #902923;
+    color: #fff;
+}
+
+.primary .hover {
+    background-color: #902923;
+    color: #D6D5C9;
+}
+
+.primary .active {
+    background-color: #902923;
+    color: #0A100D;
+}
+
+.secondary .default {
+    border: 1px solid #902923;
+    color: #0A100D;
+}
+
+.secondary .hover {
+    border: 1px solid #902923;
+    color: gray;
+}
+
+.secondary .active {
+    border: 1px solid #0A100D;
+    color: #0A100D;
+}
